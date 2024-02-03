@@ -1,0 +1,22 @@
+{
+  "name": "ssr-weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./exe/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel raw -d exe",
+    "run": "babel raw -d exe & node --env-file=.env ./exe/index.js",
+    "start": "node --env-file=.env ./exe/index.js"
+  },
+  "author": "Yeshwant",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "@babel/preset-react": "^7.23.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
